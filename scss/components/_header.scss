@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .logo {
+    text-align: center;
+    box-shadow: $box-shadow;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+  }
+
+  & .place {
+    display: flex;
+    justify-content: center;
+    background-color: $grey;
+    width: 100%;
+    padding: .5rem 0;
+
+    & .fas {
+      margin-inline-end: 1rem;
+    }
+  }
+
+  & .menus {
+    text-align: center;
+    background-color: $light-grey;
+    padding: 1rem 1rem 2rem 1rem;
+    
+    &.title {
+      margin: 0;
+      padding: 2rem 0 .5rem 0;
+    }
+  }
+}
+
+.navbar {
+  text-align: center;
+  position: relative;
+
+  .fas {
+    position: absolute;
+    left: 1rem;
+    top: 1.3rem;
+  }
+}

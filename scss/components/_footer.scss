@@ -1,0 +1,15 @@
+@import 'vars';
+
+footer {
+  background-color: $darker-grey;
+  bottom: 0;
+  padding: 1rem;
+  color: white;
+
+  .logo {
+    font-weight: 100;
+  }
+  & li > .fas {
+    font-size: $text-sm;
+  }
+}
