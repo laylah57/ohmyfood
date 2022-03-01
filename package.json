@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/app.scss:./css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/laureanne.vincent/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/laureanne.vincent/ohmyfood/issues"
+  },
+  "homepage": "https://gitlab.com/laureanne.vincent/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}

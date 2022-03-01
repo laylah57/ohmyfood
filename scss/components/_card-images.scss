@@ -1,0 +1,21 @@
+.card-image-1 {
+  background-image: url('../../resources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  background-position: center; 
+  background-size: cover;
+  height: 150px;
+  position: relative;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.card-label-new {
+  color: $dark-green;
+  font-size: .7rem;
+  font-weight: 600;
+  background-color: $green;
+  padding: .3rem .5rem;
+  border-radius: .1rem;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}

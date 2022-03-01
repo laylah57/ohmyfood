@@ -1,0 +1,98 @@
+.how-this-works {
+  padding: 1rem 1rem 2rem 1rem;
+
+  .capsule {
+    position: relative;
+    vertical-align: baseline;
+    background-color: $light-grey;
+    border-radius: 1rem;
+    border-style: none;
+    box-shadow: .1rem .2rem .5rem rgba(black, .4);
+    padding: 1rem;
+    margin: 1rem;
+
+    .number {
+      color: white;
+      text-align: center;
+      font-size: .9rem;
+      position: absolute;
+      border-radius: 2rem;
+      height: 1rem;
+      width: 1rem;
+      background-color: $primary;
+      top: 18px;
+      left: -6px;
+    }
+
+    .step {
+      display: flex;
+
+      & .fas {
+        color: $dark-grey;
+        margin-inline-end: 1rem;
+        margin-inline-start: 1rem;;
+      }
+    }
+  }
+
+  .capsule-purple {
+    @extend .capsule;
+    background-color: rgba($primary, 0.15);
+  
+    .step > .fas {
+      color: $primary;
+    }
+  }
+}
+
+.restaurants {
+  padding: 1rem 1rem 2rem 1rem;
+
+  .card {
+    margin-top: 1rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .2rem .5rem rgba(black, .4);
+  }
+
+  .card-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+  }
+}
+
+.restaurant-menu {
+  padding: 1rem;
+  background-color: $light-grey;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-top: -2.5rem;
+
+  .restaurant-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  }
+}
+
+.fa-heart {
+  font-size: 1.3rem;
+}
+
+.menu-course {
+  h3 {
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  .capsule {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border-style: none;
+    box-shadow: .1rem .2rem .5rem rgba(black, .4);
+    padding: 1rem;
+  }
+}

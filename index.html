@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ohmyfood - composez, commandez, dégustez</title>
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <link rel="stylesheet" type="text/css" href="./resources/fontawesome/css/solid.min.css" />
+        <link rel="stylesheet" type="text/css" href="./resources/fontawesome/css/regular.min.css" />
+        <link rel="stylesheet" type="text/css" href="./resources/fontawesome/css/fontawesome.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="loader">
+            <div class="lds-heart"><div></div></div>
+        </div>
+        <header class="header">
+            <div class="logo">
+                <h1 class="header-logo">ohmyfood</h1>
+            </div>
+            <div class="place">
+                <p>
+                    <icon class="fas fa-map-marker-alt"></icon>
+                    Paris, Belleville
+                </p>
+            </div>
+            <div class="menus">
+                <h2 class="menus title">
+                    Réservez le menu qui vous convient
+                </h2>
+                <p class="menus-subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button
+                    class="btn"
+                    type="button"
+                >
+                    Explorer nos restaurants
+                </button>
+
+            </div>
+        </header>
+
+        <div class="how-this-works">
+            <h2 class="title">
+                Fonctionnement
+            </h2>
+            <div class="capsule">
+                <span class="number">1</span>
+                <div class="step">
+                    <icon class="fas fa-mobile-alt"></icon>
+                    <p>Choisissez un restaurant</p>
+                </div>
+            </div>
+            <div class="capsule">
+                <span class="number">2</span>
+                <div class="step">
+                    <icon class="fas fa-list"></icon>
+                    <p>Composez votre menu</p>
+                </div>
+            </div>
+            <div class="capsule-purple">
+                <span class="number">3</span>
+                <div class="step">
+                    <icon class="fas fa-store"></icon>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurants">
+            <h2 class="title">
+                Restaurants
+            </h2>
+            <div class="card">
+                <div class="card-image-1">
+                    <span class="card-label-new">Nouveau</span>
+                </div>
+                <div class="card-description">
+                    <div class="title-location">
+                        <a href="/menus/french-style.html">
+                            <h3>La palette du goût</h3>
+                        </a>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="animated-icon">
+                        <icon class="heart fas fa-heart"></icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3 class="logo">ohmyfood</h3>
+            <ul class="footer-links">
+                <li class="footer-item"><icon class="fas fa-utensils"></icon>Proposer un restaurant</li>
+                <li class="footer-item"><icon class="fas fa-hands-helping"></icon>Devenir partenaire</li>
+                <li class="footer-item">Mentions légales</li>
+                <li class="footer-item">Contact</li>
+            </ul>
+        </footer>
+    </body>
+</html>
