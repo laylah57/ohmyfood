@@ -6,10 +6,29 @@ footer {
   padding: 1rem;
   color: white;
 
+  @media (min-width: $desktop) {
+    padding: 5rem 10rem;
+  }
+
+  .footer-item-icon {
+    display: flex;
+
+    .icon {
+      width: 10%;
+      font-size: .8rem;
+
+      @media (min-width: $tablet) {
+        width: 4%;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: .5rem;
+    font-weight: 400;
+  }
+
   .logo {
     font-weight: 100;
-  }
-  & li > .fas {
-    font-size: $text-sm;
   }
 }

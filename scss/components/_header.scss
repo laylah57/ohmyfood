@@ -1,35 +1,72 @@
+@import 'vars';
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  & .logo {
-    text-align: center;
-    box-shadow: $box-shadow;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
-  }
 
-  & .place {
-    display: flex;
-    justify-content: center;
-    background-color: $grey;
-    width: 100%;
-    padding: .5rem 0;
+  .navbar-container {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      box-shadow: $box-shadow;
+      width: 100vw;
+      z-index: 1;
+    }
 
-    & .fas {
-      margin-inline-end: 1rem;
+    .logo {
+      text-align: center;
+      margin: 0;
+      font-weight: 100;
+      box-shadow: $box-shadow;
+      width: 100vw;
+      z-index: 1;
+
+      @media (min-width:$tablet) {
+        padding-inline-start: 1rem;
+        width: initial;
+        z-index: inherit;
+        box-shadow: none;
+      }
+      @media (min-width:$desktop) {
+        padding-inline-start: 10rem;
+      }
     }
   }
 
-  & .menus {
+  .place {
+    display: flex;
+    justify-content: center;
+    background-color: $grey;
+    padding: .5rem 0;
+
+    .fas {
+      margin-inline-end: 1rem;
+    }
+
+    @media (min-width:$tablet) {
+      background-color: initial;
+      padding-inline-end: 1rem;
+    }
+    @media (min-width:$desktop) {
+      padding-inline-end: 10rem;
+    }
+  }
+
+  .menus {
     text-align: center;
     background-color: $light-grey;
     padding: 1rem 1rem 2rem 1rem;
-    
-    &.title {
+
+    @media (min-width: $tablet) {
+      padding: 0;
+      width: 100%;
+    }
+
+    .title {
       margin: 0;
       padding: 2rem 0 .5rem 0;
     }
@@ -45,4 +82,8 @@
     left: 1rem;
     top: 1.3rem;
   }
+}
+
+.header-logo {
+  font-weight: 100;
 }
