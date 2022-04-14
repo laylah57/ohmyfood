@@ -1,5 +1,6 @@
 @import "vars";
 
+// gradient-animated buttons
 .btn {
   background-color: $secondary;
   background-image: linear-gradient(to bottom right, $secondary, $secondary, $primary);
@@ -24,6 +25,7 @@
   }
 }
 
+// Animated heart buttons on restaurant cards and menus
 .heart {
   font-size: 25px;
   color: $light-grey;
@@ -33,11 +35,13 @@
   &:hover {
     cursor: pointer;
     background: linear-gradient(to bottom left, $primary, $secondary);
+    // Turning text into a shape to fill it with a gradients color
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0;
     animation: fade-in 400ms;
 
+    // Added animation to make the hover effect smoother.
     @keyframes fade-in {
       from {
         opacity: 0;

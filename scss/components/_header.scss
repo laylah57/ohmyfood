@@ -14,7 +14,7 @@
       align-items: baseline;
       box-shadow: $box-shadow;
       width: 100vw;
-      z-index: 1;
+      z-index: 1; // Used z-index to keep shadow under the navbar from tablet on
     }
 
     .logo {
@@ -23,11 +23,12 @@
       font-weight: 100;
       box-shadow: $box-shadow;
       width: 100vw;
-      z-index: 1;
+      z-index: 1; // Used z-index to make shadow visible
 
       @media (min-width:$tablet) {
         padding-inline-start: 1rem;
         width: initial;
+        // Cancel z-index to apply it to parent - needed since the location div is moved to navbar.
         z-index: inherit;
         box-shadow: none;
       }
@@ -55,7 +56,7 @@
       padding-inline-end: 10rem;
     }
   }
-
+  // Banner with grey background
   .menus {
     text-align: center;
     background-color: $light-grey;
@@ -73,10 +74,12 @@
   }
 }
 
+// Navbar on menu pages
 .navbar {
   text-align: center;
   position: relative;
 
+  // Arrow to go back to homepage
   .fas {
     position: absolute;
     left: 1rem;
@@ -84,6 +87,7 @@
   }
 }
 
+// Used font instead of png image : lighter and same result
 .header-logo {
   font-weight: 100;
 }
