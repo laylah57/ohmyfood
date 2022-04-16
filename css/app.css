@@ -7,10 +7,6 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   animation: fade-out 3s;
 }
 @keyframes fade-out {
@@ -26,55 +22,16 @@
     background-color: transparent;
   }
 }
-.loader .lds-heart {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
+.loader .spinner {
+  animation: rotate 1s ease-in-out infinite;
+  color: white;
 }
-.loader .lds-heart div {
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  background: #fff;
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.loader .lds-heart div:after, .loader .lds-heart div:before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  background: #fff;
-}
-.loader .lds-heart div:before {
-  left: -24px;
-  border-radius: 50% 0 0 50%;
-}
-.loader .lds-heart div:after {
-  top: -24px;
-  border-radius: 50% 50% 0 0;
-}
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
   }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
+  to {
+    transform: rotateZ(360deg);
   }
 }
 
@@ -146,19 +103,19 @@
 }
 
 #palette_du_gout {
-  background-image: url("/../resources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../resources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 #note_enchantee {
-  background-image: url("/../resources/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../resources/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 #a_la_francaise {
-  background-image: url("/../resources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../../resources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 #delice_des_sens {
-  background-image: url("/../resources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../resources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .card-label-new {
@@ -270,6 +227,15 @@
   color: #9356DC;
 }
 
+.restaurants {
+  padding: 1rem 1rem 2rem 1rem;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 1rem 10rem 2rem 10rem;
+  }
+}
+
 @media (min-width: 768px) {
   .restaurant-cards-wrapper {
     display: flex;
@@ -292,25 +258,17 @@
   }
 }
 
-.restaurants {
-  padding: 1rem 1rem 2rem 1rem;
-}
-@media (min-width: 1024px) {
-  .restaurants {
-    padding: 1rem 10rem 2rem 10rem;
-  }
-}
-.restaurants .card {
+.card {
   margin-top: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 768px) {
-  .restaurants .card {
+  .card {
     margin: 1rem;
   }
 }
-.restaurants .card-description {
+.card .card-description {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -349,6 +307,9 @@
 .restaurant-menu .restaurant-name h2 {
   font-weight: 100;
 }
+.restaurant-menu .restaurant-name .fa-heart {
+  font-size: 1.3rem;
+}
 
 .title-decoration {
   position: relative;
@@ -371,10 +332,6 @@
   .title-decoration h3::after {
     top: 2.5rem;
   }
-}
-
-.fa-heart {
-  font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {

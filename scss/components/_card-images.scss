@@ -1,3 +1,5 @@
+@import 'vars';
+// Set all images as backgrounds so as to have only one import
 .card-image {
   background-position: center;
   background-size: cover;
@@ -16,6 +18,7 @@
   }
 }
 
+// Gave ids to each restaurant and used style to upload image
 #palette_du_gout {
   background-image: url('../../../resources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
 }
@@ -43,6 +46,7 @@
   right: .5rem;
 }
 
+// Used display block on <a> element to make the whole card clickable
 .clickable {
   display: block;
 }
