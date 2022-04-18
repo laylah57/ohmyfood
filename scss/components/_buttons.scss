@@ -1,6 +1,6 @@
 @import "vars";
 
-// gradient-animated buttons
+// Gradient-animated buttons
 .btn {
   background-color: $secondary;
   background-image: linear-gradient(to bottom right, $secondary, $secondary, $primary);
@@ -52,5 +52,3 @@
     }
   }
 }
-
-
