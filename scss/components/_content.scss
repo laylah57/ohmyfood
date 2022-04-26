@@ -296,23 +296,38 @@
       }
     }
 
-    & h4 {
-      font-weight: bold;
-      margin: 0 0 .2rem 0;
-      // Had to make it extra small so that the price won't overlap the text.
-      @media (max-width: $mobile-xs) {
-        font-size: .9rem;
+    .text-ellipsis {
+      width: 100%;
+      height: 100%;
+      transition: width 300ms;
+
+      & h4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: bold;
+        margin: 0 0 .2rem 0;
+        // Had to make it extra small so that the price won't overlap the text.
+        @media (max-width: $mobile-xs) {
+          font-size: .9rem;
+        }
+      }
+
+      & p.muted {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (max-width: $mobile-xs) {
+          p {
+            font-size: .7rem;
+          }
+        }
       }
     }
-
-    @media (max-width: $mobile-xs) {
-      p {
-        font-size: .7rem;
-      }
-    }
-
     // Handling check animation. Base elements and then animation on hover (see below)
     .slide-in-animation {
+      background-color: white;
+      padding-left: .25rem;
       display: flex;
       // Absolute position so it can stick out of the capsule
       position: absolute;
@@ -363,6 +378,11 @@
       // Make the icon rotate on hover
       .check {
         transform: rotateZ(360deg);
+      }
+
+      // Text-ellipsis effect
+      .text-ellipsis {
+        width: 12rem;
       }
     }
   }

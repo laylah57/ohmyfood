@@ -111,7 +111,7 @@
 }
 
 #a_la_francaise {
-  background-image: url("../../resources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../resources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 #delice_des_sens {
@@ -407,21 +407,36 @@
     opacity: 1;
   }
 }
-.menu-course .capsule h4 {
+.menu-course .capsule .text-ellipsis {
+  width: 100%;
+  height: 100%;
+  transition: width 300ms;
+}
+.menu-course .capsule .text-ellipsis h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: bold;
   margin: 0 0 0.2rem 0;
 }
 @media (max-width: 320px) {
-  .menu-course .capsule h4 {
+  .menu-course .capsule .text-ellipsis h4 {
     font-size: 0.9rem;
   }
 }
+.menu-course .capsule .text-ellipsis p.muted {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 320px) {
-  .menu-course .capsule p {
+  .menu-course .capsule .text-ellipsis p.muted p {
     font-size: 0.7rem;
   }
 }
 .menu-course .capsule .slide-in-animation {
+  background-color: white;
+  padding-left: 0.25rem;
   display: flex;
   position: absolute;
   right: -3rem;
@@ -463,6 +478,9 @@
 }
 .menu-course .capsule:hover .check {
   transform: rotateZ(360deg);
+}
+.menu-course .capsule:hover .text-ellipsis {
+  width: 12rem;
 }
 
 footer {
